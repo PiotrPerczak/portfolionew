@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0a192e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container1 {
+  backdrop-filter: blur(16px);
+}
+
+.minus {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -200px;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+.bgbt:hover {
+  background-color: #64ffda;
+}
+.svg1 {
+  fill: #64ffda;
+  color: #64ffda;
+}
+.arr {
+  font-size: 24px;
+}
+
+.hover:hover {
+  color: #64ffda;
+}
+.svgh {
+  fill: #4b5563;
+}
+.svgh:hover {
+  fill: #64ffda;
+  stroke: #64ffda;
+}
+
+.border {
+  border-top: solid;
+  border-color: #64ffda;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.navbar {
+  background-color: #0a192e;
+}
+.footer {
+  background-color: #0a192e;
+}
