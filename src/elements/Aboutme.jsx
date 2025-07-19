@@ -31,7 +31,7 @@ export default function Example1() {
               </p>
               <div className="flex mt-2 ">
                 <a
-                  href="https://www.linkedin.com/in/piotr-perczak-b95078283/"
+                  href="https://www.linkedin.com/in/piotr-perczak-8b6a01374/"
                   className=" bg-transparent"
                 >
                   <svg
