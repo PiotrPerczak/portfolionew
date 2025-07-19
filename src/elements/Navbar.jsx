@@ -5,7 +5,7 @@ import "../index.css";
 import "../efect.scss";
 import aa from "../assets/21731.jpg";
 import PDF from "../assets/Resume_Piotr_Perczak_6.pdf";
-import App from "../App";
+
 
 const navigation = [
   { nejm: "01. ", name: "Home", href: "#Home" },

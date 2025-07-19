@@ -3,13 +3,20 @@ import GameShop from "../assets/GameShop.png";
 import chat from "../assets/chat.png";
 import por from "../assets/por.png";
 
-export default function Example2() {
+/**
+ * Projects section component
+ * Displays a list of portfolio projects with descriptions, technology stack, links, and screenshots
+ * Each project is presented in a styled card with a background, title, description, and image
+ */
+export default function Projects() {
   return (
     <div id="projects" className="py-20 align-center justify-center ">
+      {/* Section header */}
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto grid gap-4 place-content-center max-w-2xl lg:text-center">
           <h2 className="text-3xl flex text-left font-bold tracking-tight sm:text-4xl text-gray-300">
             Projects
+            {/* Decorative SVG icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -22,8 +29,10 @@ export default function Example2() {
             </svg>
           </h2>
         </div>
+        {/* Spacer for layout */}
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl"></div>
       </div>
+      {/* Projects list */}
       <div className="">
         <div className="mx-auto max-w-7xl py-24 sm:px-6  lg:px-8">
           <div className="relative isolate overflow-hidden bg-slate-800 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">

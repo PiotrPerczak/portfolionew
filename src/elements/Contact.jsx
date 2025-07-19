@@ -1,9 +1,16 @@
+/**
+ * Contact section component
+ * Provides a contact form for users to send messages via EmailJS
+ * Includes fields for name, email, and message, and displays a confirmation alert on success
+ */
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
-export default function Example3() {
+export default function Contact() {
+    // Reference to the form element
     const form = useRef();
   
+    // Function to handle form submission and send email
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -17,10 +24,12 @@ export default function Example3() {
     };
   return (
     <div id="contact" className="isolate px-6 py-24 sm:py-32 lg:px-8">
+      {/* Section header */}
       <div className="mx-auto max-w-2xl flex justify-center text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
           Contact
         </h2>
+        {/* Decorative SVG icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-10 ml-2 svg1"
@@ -32,6 +41,7 @@ export default function Example3() {
           />
         </svg>
       </div>
+      {/* Contact form */}
       <form
         action="#"
         method="POST"
@@ -40,6 +50,7 @@ export default function Example3() {
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
         <div className=" gap-x-8 gap-y-6 sm:grid-cols-2">
+          {/* Name field */}
           <div>
             <label
               htmlFor="first-name"
@@ -57,6 +68,7 @@ export default function Example3() {
               />
             </div>
           </div>
+          {/* Email field */}
           <div className="sm:col-span-2">
             <label
               htmlFor="email"
@@ -74,6 +86,7 @@ export default function Example3() {
               />
             </div>
           </div>
+          {/* Message field */}
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
@@ -92,6 +105,7 @@ export default function Example3() {
             </div>
           </div>
         </div>
+        {/* Submit button */}
         <div className="mt-10">
           <button
             value="Send"

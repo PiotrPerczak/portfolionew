@@ -1,7 +1,13 @@
-export default function Example4() {
+/**
+ * Footer component
+ * Displays the site logo, brand name, and social media links
+ * Uses responsive layout and SVG icons for branding and links
+ */
+export default function Footer() {
   return (
     <footer className="bg-white shadow  navbar">
       <div className="w-full mx-auto gap-4 max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        {/* Logo and brand name */}
         <span className="flex sm:text-center dark:text-gray-400">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -19,6 +25,7 @@ export default function Example4() {
             PPER.dev
           </a>
         </span>
+        {/* Social media links */}
         <div className="flex align-items gap-4 flex-wrap items-center text-sm font-medium text-gray-500 dark:text-gray-400 ">
           <a href="#" className=" ">
             <svg

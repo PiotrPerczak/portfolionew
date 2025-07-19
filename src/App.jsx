@@ -1,21 +1,41 @@
+/**
+ * Main App component that serves as the root of the portfolio application
+ * Renders all major sections: Navbar, About Me, Projects, Contact, and Footer
+ * Uses horizontal dividers to separate each section visually
+ */
 import "./App.css";
-import Example from "./elements/Navbar";
-import Example1 from "./elements/Aboutme";
-import Example2 from "./elements/Projects";
-import Example3 from "./elements/Contact";
-import Example4 from "./elements/Footer";
+import Navbar from "./elements/Navbar";
+import AboutMe from "./elements/Aboutme";
+import Projects from "./elements/Projects";
+import Contact from "./elements/Contact";
+import Footer from "./elements/Footer";
 
 function App() {
   return (
     <div>
-      <Example ></Example>
+      {/* Navigation bar component */}
+      <Navbar />
+      
+      {/* Gradient horizontal divider */}
       <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-      <Example1 ></Example1>
+      
+      {/* About me section */}
+      <AboutMe />
+      
+      {/* Gradient horizontal divider */}
       <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-      <Example2 ></Example2>
+      
+      {/* Projects showcase section */}
+      <Projects />
+      
+      {/* Gradient horizontal divider */}
       <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
-      <Example3></Example3>
-      <Example4></Example4>
+      
+      {/* Contact form section */}
+      <Contact />
+      
+      {/* Footer component */}
+      <Footer />
     </div>
   );
 }
